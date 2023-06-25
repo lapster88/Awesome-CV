@@ -7,10 +7,13 @@
 *.fls
 *.out
 *.toc
+*.synctex*
+*.fdb_latexmk
 
 ## Intermediate documents:
 *.dvi
 *-converted-to.*
+*.xdv
 
 ### Editor ###
 ## Vim & Emacs temp files:
