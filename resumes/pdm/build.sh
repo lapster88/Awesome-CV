@@ -1,2 +1,3 @@
 #!/bin/bash
-xelatex -output-directory=/mnt/c/Users/mlapp/Documents/resumes pdm_resume.tex
+xelatex swe_resume.tex
+cp pdm_resume.pdf ~/Documents
