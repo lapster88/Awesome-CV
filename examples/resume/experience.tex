@@ -11,39 +11,88 @@
 
 %---------------------------------------------------------
   \cventry
-    {Technical Product Manager} % Job title
-    {Iris Technology Corporation} % Organization
-    {Irvine, CA} % Location
-    {Apr. 2020 - Present} % Date(s)
+    {DevOps Engineer} % Job title
+    {Dunamu Inc.} % Organization
+    {Seoul, S.Korea} % Location
+    {Sep. 2023 - Present} % Date(s)
+    {
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Founding Member \& Site Reliability Engineer \& Infrastructure Team Lead} % Job title
+    {Danggeun Pay Inc. (KarrotPay)} % Organization
+    {Seoul, S.Korea} % Location
+    {Mar. 2021 - Jun. 2023} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Pioneered the technical product manager role at Iris, coordinating the efforts of sales, business development, marketing, and engineering to create a uniform product vision for Iris' tactical power business unit}
-        \item {Developed the business cases, win-themes, and strategic positioning for business development opportunities in order to secure over \$6 million in revenue over the last year and add over \$20 million to the pipeline}
-        \item {Delivered 5 successful proposals by providing both technical expertise and compelling business narrative that emphasized customer needs}
-        \item {Transitioned opportunities from business development to the program management and engineering teams, ensuring that the customer's needs and use cases were well understood throughout the entire product development effort}
-        \item {Shaped product development efforts by creating product roadmaps, user personas, and market requirement documents through extensive customer interaction and discussion}
-        \item {Coordinated with the sales and marketing teams to define product positioning and messaging}
-        \item {Led rapid prototyping efforts to support the business development team. Participated heavily in sprint planning and prioritization of features to deliver the items most critical to securing the business}
+        \item {Everything that matters.}
+        \item {Designed and provisioned the entire infrastructure on the AWS cloud to meet security compliance and acquire a business license for financial services in Korea.}
+        \item {Continuously improved the infrastructure architecture since launching the service. (currently 3.6 million users)}
+        \item {Established a standardized base for declarative management of infrastructures and service deployments, enabling operational efficiency and consistency. Over 90\% of AWS resources were all managed through standardized terraform modules. All add-ons and service workloads on the Kubernetes cluster were managed on a GitOps basis with Kustomize and ArgoCD.}
+        \item {Saved over 30\% of the overall AWS costs by establishing a quarterly purchasing strategiy for RI (Reserved Instance) and SP (Savings Plan) and by introducing Graviton instances.}
+        \item {Established a core architecture for regulating of outbound DNS traffic in multi-account and multi-VPC environments utilizing AWS Route53 DNS Firewall and FMS. This significantly increased the level of security confidence in the financial sector's segregated environment.}
+        \item {Introduced Okta employee identity solution in the company, establishing security policies and configuring SSO integration with over 20 enterprise systems including AWS, GitHub, Slack, Google Workspace. Set up a Hub and Spoke architecture, enabling a collaborative account structure with the parent company, Daangn Market.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventry
-    {Engineer} % Job title
-    {Iris Technology Corporation} % Organization
-    {Irvine, CA} % Location
-    {Jun. 2015 - Apr. 2020} % Date(s)
+    {Site Reliability Engineer} % Job title
+    {Danggeun Market Inc.} % Organization
+    {Seoul, S.Korea} % Location
+    {Feb. 2021 - Mar. 2021} % Date(s)
+    {
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Founding Member \& Director of Infrastructure Division} % Job title
+    {Kasa} % Organization
+    {Seoul, S.Korea} % Location
+    {Jun. 2018 - Jan. 2021} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Contributed to all engineering aspects of design and development, primarily in software, systems, project, and sales engineering}
-        \item {Strengthened relationships with key US military customers by providing on-site technical integration support}
-        \item {Traveled roughly 25\% of the time attending tradeshows and customer meetings, pitching development concepts, and engaging with our end-users}
-        \item {Designed a desktop GUI application in Python for internal product debugging that has become a standard template for desktop applications at Iris}
-        \item {Served as lead software engineer for 3 embedded software development efforts writing embedded C code for Cortex-M0 based microcontroller systems}
-        \item {Participated in an agile-based software development process both as a developer and as a stakeholder}
-        \item {Designed and implemented custom, interrupt-based, asynchronous drivers for single wire communication protocols}
-        \item {Served as lead test engineer on 2 product development efforts. Was responsible for writing and performing product acceptance tests, including MIL-STD tests, to validate system design requirements as part of Iris' AS9100D quality process}
-        \item {Served as acting program manager on 3 programs exceeding \$500k in value, including internal and contract development efforts}
+        \item {Designed on-boarding process to guide new engineers, help them to focus on the right tasks, and set expectations to help them be successful at Infrastructure team.}
+        \item {Migrated the orchestration system from DC/OS to Kubernetes which is based on AWS EKS. Managed 3 Kubernetes clusters and 300+ pods. Managed all Kubernetes manifests declaratively with Kustomize and ArgoCD.}
+        \item {Designed and managed complex network configurations on AWS with 4 VPC and 100+ subnets. Separated the development network and operation network according to financial regulations. Established dedicated network connections from AWS VPC to partners' on-premise network based on AWS Direct Connect with secure connection using IPsec VPN. Provisioned OpenVPN servers with LDAP integration.}
+        \item {Provisioned a observability system with Kafka, Elastic Stack(Filebeat, Heartbeat, APM Server, Logstash, Elasticsearch, Kibana). Collected log, uptime, tracing data from hosts, containers, pods and more. The ES cluster which has 9 nodes processed more than 1 billion documents per month. Wrote Terraform module to easily provision ES cluster on AWS EC2 instances.}
+        \item {Provisioned a monitoring system with Kafka, Telegraf, InfluxDB, Grafana. Collected metrics from hosts, containers, pods and more. Wrote Terraform module to easily provision InfluxDB with HA on AWS EC2 instances.}
+        \item {Introduced Kong API Gateway to easily connect all API microservices with a declarative management method based on Terraform and Atlantis to collaborate and audit change history.}
+        \item {Provisioned the Directory Service for employee identity management based on OpenLDAP which guarantees HA with multi-master replication.}
+        \item {Implemented Worker microservices consuming Kafka event topics for email, SMS, Kakaotalk and Slack notification. Developed in-house framework to easily build Kafka consumer microservice with common features including retry on failure, DLQ(Dead Letter Queue), event routing and more.}
+        \item {Introduced Elastic APM to help distributed tracing, trouble-shooting and performance testing in MSA.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Software Architect} % Job title
+    {Omnious. Co., Ltd.} % Organization
+    {Seoul, S.Korea} % Location
+    {Jun. 2017 - May. 2018} % Date(s)
+>>>>>>> 0cd0625f2acb66669cabc79e69b26dd4926d6731
+ \cventry
+    {Software Engineer \& Security Researcher (Compulsory Military Service)} % Job title
+    {R.O.K Cyber Command, MND} % Organization
+    {Seoul, S.Korea} % Location
+    {Aug. 2014 - Apr. 2016} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Lead engineer on agent-less backtracking system that can discover client device's fingerprint(including public and private IP) independently of the Proxy, VPN and NAT.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer} % Job title
+    {ShitOne Corp.} % Organization
+    {Seoul, S.Korea} % Location
+    {Dec. 2011 - Feb. 2012} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed a proxy drive smartphone application which connects proxy driver and customer.}
+        \item {Implemented overall Android application logic and wrote API server for community service, along with lead engineer who designed bidding protocol on raw socket and implemented API server for bidding.}
       \end{cvitems}
     }
 
